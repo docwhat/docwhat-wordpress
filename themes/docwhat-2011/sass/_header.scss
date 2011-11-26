@@ -1,0 +1,67 @@
+header#branding {
+   @include border-radius(1em 1em 0 0);
+   @include background-clip();
+   margin-bottom: 1em;
+   @include background-with-css2-fallback(linear-gradient(top, transparentize($hero-color, 0.8), $hero-color));
+   border-bottom: 1px solid $hero-border-color;
+
+   hgroup {
+      text-align: center;
+      h1 {
+	 font-family: $header-font;
+	 font-weight: bold;
+	 font-size: 4em;
+	 margin: 0;
+	 a {
+	    color: #333;
+	    text-decoration: none;
+	    @include text-shadow(#999, 0.08ex, 0.08ex, 0.1ex);
+            &:hover {
+	       color: $link-color;
+	    }
+	 }
+      }
+      h2 {
+	 margin: 0;
+	 font-style: italic;
+	 font-size: 0.8em;
+      }
+   }
+}
+#access {
+   @include clearfix();
+   div {
+      @include clearfix();
+   }
+   h1 {
+      font-size: 1em;
+      float: left;
+      margin-left: -100000em;
+   }
+   font-size: 1em;
+   div.menu-main-container {
+      margin-top: 0.5em;
+   }
+   ul {
+      @include clearfix();
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+   }
+   li {
+      background: transparentize($hero-color, 1);
+      float: right;
+      position: relative;
+      @include box-shadow(0 3px 3px rgba(0,0,0,0.2));
+      &:hover > a {
+	 background: transparentize(lighten($hero-color, 10%), .8);
+	 background: transparentize($hero-color, .3);
+	 @include background-with-css2-fallback(linear-gradient(bottom, darken($hero-color, 25%), white));
+      }
+   }
+   a {
+      display: block;
+      line-height: 2em;
+      padding: 0 1em;
+   }
+}

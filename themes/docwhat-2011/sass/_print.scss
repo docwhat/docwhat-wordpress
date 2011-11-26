@@ -1,0 +1,4 @@
+// Printing stylesheet
+@media print {
+  @include blueprint-print(true);
+}

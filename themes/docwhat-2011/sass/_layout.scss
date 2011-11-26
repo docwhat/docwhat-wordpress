@@ -1,0 +1,31 @@
+
+header#branding, footer#colophon {
+  @include column(24);
+}
+#primary {
+  margin-top: span(1)/4;
+  margin-left: span(1)/4;
+  margin-right: span(1)/4;
+  @include column(16);
+  article, nav {
+    margin: span(1)/4;
+  }
+}
+.widget-area {
+  margin-top: span(1)/4;
+  margin-right: span(1)/2;
+  @include column(7);
+  @include last;
+  aside {
+    margin-top: span(1)/4;
+  }
+}
+
+body.single #primary {
+  @include column(23.5);
+  @include last;
+}
+body.single .widget-area {
+  display: none;
+}
+

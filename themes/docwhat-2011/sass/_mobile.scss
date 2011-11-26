@@ -1,0 +1,7 @@
+
+@media (max-device-width: 480px) {
+  #page {
+    @include border-radius( 0 );
+    margin: 0;
+  }
+}

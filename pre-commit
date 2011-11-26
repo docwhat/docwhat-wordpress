@@ -1,9 +1,12 @@
-#!/bin/sh
+#!/bin/zsh
 
 set -eu
 
 cd $(dirname $(dirname "$0"))
 
 rake default
+
+git add **/*.css
+git add **/*.js
 
 # EOF
