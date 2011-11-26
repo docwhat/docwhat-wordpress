@@ -24,8 +24,8 @@ task :js => [:'js:compile']
 
 task :default => [:css, :js]
 
-desc "Clears the styles, generates new ones and then deploys the theme"
-task :deploy => 'styles:generate' do
+desc "Deploys the latest code committed in git"
+task :deploy do
   puts "*** Deploying the site ***"
-  system("rsync -avz --delete . #{ssh_user}:#{remote_root}")
+  system("ssh gerf.org 'cd Sites/docwhat-wordpress && git pull'")
 end
