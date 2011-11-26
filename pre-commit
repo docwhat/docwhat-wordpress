@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -eu
+
+cd $(dirname $(dirname "$0"))
+
+rake default
+
+# EOF
