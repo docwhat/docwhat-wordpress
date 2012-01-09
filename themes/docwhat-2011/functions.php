@@ -43,8 +43,11 @@ add_filter('get_the_excerpt', 'docwhat_add_post_thumb');
 add_filter('the_content',  'docwhat_add_post_thumb');
 
 // Add custom js
-wp_register_script( 'my_site_script', get_stylesheet_directory_uri() . '/js/script.js', array(), false, true );
-wp_enqueue_script( 'my_site_script' );
+function my_scripts_method() {
+  wp_register_script( 'my_site_script', get_stylesheet_directory_uri() . '/js/script.js', array(), false, true );
+  wp_enqueue_script( 'my_site_script' );
+}
+add_action('wp_enqueue_scripts', 'my_scripts_method');
 
 // Use dquo spans for first double quote.
 function docwhat_dquo($text) {
