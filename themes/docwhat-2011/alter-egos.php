@@ -102,7 +102,7 @@
     </ul>
   </li>
   <li>
-    <h4>Goming Egos</h4>
+    <h4>Gaming Egos</h4>
     <ul>
       <li>
         <a rel="me" href="http://steamcommunity.com/id/docwhat/">Steam</a>: docwhat
