@@ -3,7 +3,7 @@
 Plugin Name: Docwhat's Widgets
 Description: Widgets for Docwhat's site
 Version: 1.0
-Author URI: http://docwhat.gerf.org/
+Author URI: http://docwhat.org/
 */
 
 /*********************************

@@ -83,9 +83,9 @@ if( $errno == 403 ) {
     # A new failed spambot attempt.
     # Example:
     # Refering link:
-    # http://docwhat.gerf.org/2007/11/no-laptop/+%5BPLM=0%5D+GET+http://docwhat.gerf.org/2007/11/no-laptop/+%5B0,15030,18391%5D+-%3E+%5BN%5D+POST+http://docwhat.org/post/+%5B0,0,441%5D
+    # http://docwhat.org/2007/11/no-laptop/+%5BPLM=0%5D+GET+http://docwhat.org/2007/11/no-laptop/+%5B0,15030,18391%5D+-%3E+%5BN%5D+POST+http://docwhat.org/post/+%5B0,0,441%5D
     # Bad link:
-    # http://docwhat.gerf.org/2007/11/no-laptop/+%5BPLM=0%5D+GET+http://docwhat.gerf.org/2007/11/no-laptop/+%5B0,15030,18391%5D+-%3E+%5BN%5D+POST+http://docwhat.org/post/+%5B0,0,441%5D
+    # http://docwhat.org/2007/11/no-laptop/+%5BPLM=0%5D+GET+http://docwhat.org/2007/11/no-laptop/+%5B0,15030,18391%5D+-%3E+%5BN%5D+POST+http://docwhat.org/post/+%5B0,0,441%5D
 
     if( preg_match('!\+%5BPLM=0%5D\+!', $_SERVER['REQUEST_URI']) ) {
         $reason = 'spambot';
