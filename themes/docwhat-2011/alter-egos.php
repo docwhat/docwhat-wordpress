@@ -93,7 +93,7 @@
       </li>
       <li>
         <a rel="me"
-           href="http://youtube.com/docwhat">YouTube</a>: docwhat
+           href="http://youtube.com/TheDoctorWhat">YouTube</a>: TheDoctorWhat
       </li>
     </ul>
   </li>
