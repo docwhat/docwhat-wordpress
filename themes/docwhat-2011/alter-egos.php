@@ -4,15 +4,15 @@
     <ul>
       <li>
         <a rel="me"
-           href="http://www.aim.com/">AIM</a>: <a href="aim:goim?screenname=TheDoctorWhat">TheDoctorWhat</a>
-      </li>
-      <li>
-        <a rel="me"
            href="http://freenode.net/">freenode</a>: docwhat
       </li>
       <li>
         <a rel="me"
            href="http://gmail.com/">GMail</a>: docwhat
+      </li>
+      <li>
+        <a rel="me"
+           href="http://www.aim.com/">AIM</a>: <a href="aim:goim?screenname=TheDoctorWhat">TheDoctorWhat</a>
       </li>
       <li>
         <a rel="me"
@@ -33,6 +33,22 @@
     <ul>
       <li>
         <a rel="me"
+           href="https://twitter.com/docwhat">Twitter</a>
+      </li>
+      <li>
+        <a rel="me"
+           href="http://www.facebook.com/docwhat/">Facebook</a>
+      </li>
+      <li>
+        <a rel="me"
+           href="http://www.flickr.com/photos/docwhat/">Flickr</a>
+      </li>
+      <li>
+        <a rel="me"
+           href="http://www.linkedin.com/in/docwhat">LinkedIn</a>
+      </li>
+      <li>
+        <a rel="me"
            href="http://www.advogato.org/person/docwhat/">Advogato</a>
       </li>
       <li>
@@ -49,15 +65,7 @@
       </li>
       <li>
         <a rel="me"
-           href="http://www.facebook.com/docwhat/">Facebook</a>
-      </li>
-      <li>
-        <a rel="me"
-           href="http://www.flickr.com/photos/docwhat/">Flickr</a>
-      </li>
-      <li>
-	<a rel="me"
-	   href="http://www.google.com/profiles/docwhat">Google/GMail/Buzz</a>
+           href="http://www.google.com/profiles/docwhat">Google</a>
       </li>
       <li>
         <a rel="me"
@@ -73,10 +81,6 @@
       </li>
       <li>
         <a rel="me"
-           href="http://www.linkedin.com/in/docwhat">LinkedIn</a>
-      </li>
-      <li>
-        <a rel="me"
            href="http://slashdot.org/~docwhat/">Slashdot</a>
       </li>
       <li>
@@ -85,19 +89,11 @@
       </li>
       <li>
         <a rel="me"
-           href="http://docwhat.stumbleupon.com/">StumbleUpon</a>
-      </li>
-      <li>
-        <a rel="me"
            href="http://technorati.com/people/technorati/docwhat">Technorati</a>
       </li>
       <li>
         <a rel="me"
-           href="https://twitter.com/docwhat">Twitter</a>
-      </li>
-      <li>
-        <a rel="me"
-           href="http://youtube.com/TheDoctorWhat">YouTube</a>: TheDoctorWhat
+           href="http://youtube.com/docwhat">YouTube</a>: docwhat
       </li>
     </ul>
   </li>
@@ -106,6 +102,10 @@
     <ul>
       <li>
         <a rel="me" href="http://steamcommunity.com/id/docwhat/">Steam</a>: docwhat
+      </li>
+      <li>
+        <a rel="me"
+           href="http://battle.net/">Battle.Net</a>: docwhat#1698
       </li>
       <li>
         <a rel="me"
@@ -140,8 +140,8 @@
            href="http://www.amazon.com/registry/wishlist/2940VECHO9PJY?reveal=unpurchased&filter=all&sort=priority&layout=standard">Amazon Wishlist</a>
       </li>
       <li>
-	<a
-	    href="http://www.thinkgeek.com/brain/gimme.cgi?wid=81e27ae08">Think Geek Wishlist</a>
+  <a
+      href="http://www.thinkgeek.com/brain/gimme.cgi?wid=81e27ae08">Think Geek Wishlist</a>
       </li>
       <li>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="margin:0">
@@ -157,7 +157,7 @@
         </form>
       </li>
       <li>
-	<a href="http://flattr.com/thing/303004/The-Doctor-What" target="_blank">
+  <a href="http://flattr.com/thing/303004/The-Doctor-What" target="_blank">
 <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
       </li>
       <li style="display: none">
@@ -172,5 +172,5 @@
 <!--Local Variables:-->
 <!--mode: nxml-->
 <!--End:-->
-*/
+ */
 ?>
