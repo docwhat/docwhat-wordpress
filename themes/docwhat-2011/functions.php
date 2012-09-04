@@ -38,7 +38,7 @@ function docwhat_add_post_thumb($content) {
   }
 }
 // Add it to the excerpt on the home page.
-add_filter('get_the_excerpt', 'docwhat_add_post_thumb');
+add_filter('the_excerpt', 'docwhat_add_post_thumb');
 // Add it to the content for a single post.
 add_filter('the_content',  'docwhat_add_post_thumb');
 
