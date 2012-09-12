@@ -57,6 +57,32 @@ add_filter('the_content',  'docwhat_dquo');
 add_filter('the_excerpt',  'docwhat_dquo');
 add_filter('comment_text', 'docwhat_dquo');
 
+function toolbox_posted_on() {
+  if (get_the_date() == get_the_modified_date()) {
+    printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="published updated entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'toolbox' ),
+      esc_url( get_permalink() ),
+      esc_attr( get_the_time() ),
+      esc_attr( get_the_date( 'c' ) ),
+      esc_html( get_the_date() ),
+      esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+      esc_attr( sprintf( __( 'View all posts by %s', 'toolbox' ), get_the_author() ) ),
+      esc_html( get_the_author() )
+   );
+  } else {
+    printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="published entry-date" title="%3$s" datetime="%3$s" pubdate>%4$s</time></a> (last updated <time class="updated entry-date" title="%8$s" datetime="%8$s">%9$s</time>)<span class="byline"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'toolbox' ),
+      esc_url( get_permalink() ),
+      esc_attr( get_the_time() ),
+      esc_attr( get_the_date( 'c' ) ),
+      esc_html( get_the_date() ),
+      esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+      esc_attr( sprintf( __( 'View all posts by %s', 'toolbox' ), get_the_author() ) ),
+      esc_html( get_the_author() ),
+      esc_attr( get_the_modified_date( 'c' ) ),
+      esc_html( get_the_modified_date() )
+    );
+  }
+}
+
 // Better comment layout
 function toolbox_comment( $comment, $args, $depth ) {
   $GLOBALS['comment'] = $comment;
