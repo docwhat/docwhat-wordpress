@@ -73,10 +73,18 @@ if( $errno == 403 ) {
       }
     }
 
+    # aim:goim links are bad bots.
+    if( preg_match('!(/aim:goim\?)!', $_SERVER['REQUEST_URI']) ) {
+        $reason = 'spambot';
+    }
+
     # http or https is a bad spambot.
+    if( preg_match('!(/(http|https):/)!', $_SERVER['REQUEST_URI']) ) {
+        $reason = 'spambot';
+    }
+
     # And fragments shouldn't make it this far....
-    if( preg_match('!(^(http|https)://|#|[^%]+%23|\\")!', $_SERVER['REQUEST_URI']) ||
-        preg_match('!(#|[^%]+%23|\\")!', $_SERVER['HTTP_REFERER']) ) {
+    if( preg_match('!(#|[^%]+%23|\\")!', $_SERVER['HTTP_REFERER']) ) {
         $reason = 'spambot';
     }
 
@@ -91,8 +99,11 @@ if( $errno == 403 ) {
         $reason = 'spambot';
     }
 
-    # Old post page -- apparently spammers recorded it...
-    if( preg_match('!^/post-comments!', $_SERVER['REQUEST_URI']) ) {
+    if( preg_match('!/docwhat@gmail.com!', $_SERVER['REQUEST_URI']) ) {
+        $reason = 'spambot';
+    }
+
+    if( preg_match('!^/register!', $_SERVER['REQUEST_URI']) ) {
         $reason = 'spambot';
     }
 
@@ -153,7 +164,8 @@ automated message from $websitename: $website");
         "docwhat.org error from ip " . $_SERVER['REMOTE_ADDR'],
         implode("\n", $body),
         "From: $websitename <noreply@$website>\n" .
-        "In-Reply-To: $ref"
+        "X-Script: docwhat.org:404\n" .
+        "In-Reply-To: $ref\n"
         );
 }
 
