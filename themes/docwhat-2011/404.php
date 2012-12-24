@@ -103,7 +103,11 @@ if( $errno == 403 ) {
         $reason = 'spambot';
     }
 
-    if( preg_match('!^/register!', $_SERVER['REQUEST_URI']) ) {
+    if( preg_match('!register!', $_SERVER['REQUEST_URI']) ) {
+        $reason = 'spambot';
+    }
+
+    if( preg_match('!signup!', $_SERVER['REQUEST_URI']) ) {
         $reason = 'spambot';
     }
 
@@ -130,6 +134,15 @@ if( $_REQUEST['testreason'] == 'badlink' ) {
 
 header("X-Reason: $reason");
 
+if( $_REQUEST['debugging'] == 'true' ) {
+  header("Content-Type: text/plain;");
+  print "Debugging Info:\n";
+  print "Referrer:    " . $_SERVER['HTTP_REFERER'] . "\n";
+  print "Reason:      " . $reason . "\n";
+  print "Request URI: " . $_SERVER['REQUEST_URI'] . "\n";
+  exit();
+}
+
 if( $reason == 'spambot' ) {
     // Send them to http://spampoison.com  Yay! Doom!
     header("Location: http://english-89667721068.spampoison.com");
@@ -142,6 +155,7 @@ if( $reason == 'our_badlink' || $reason == 'our_forbidden' ) {
     "Refering link:    ".$_SERVER['HTTP_REFERER'],
     "Bad link:         http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'],
     "IP:               http://whatismyipaddress.com/ip/".urlencode($_SERVER['REMOTE_ADDR']),
+    "Reason:           ".$reason,
     "");
   foreach( $_GET as $key => $value ) {
       array_push($body, sprintf("_GET['%-s'] = '%s'",$key, $value));
