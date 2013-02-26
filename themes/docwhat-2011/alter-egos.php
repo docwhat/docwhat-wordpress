@@ -158,7 +158,7 @@
       </li>
       <li>
   <a href="http://flattr.com/thing/303004/The-Doctor-What" target="_blank">
-<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+<img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
       </li>
       <li style="display: none">
         <a rel="me" href="http://christian.holtje.org/">Vanity URL</a>
