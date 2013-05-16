@@ -112,10 +112,12 @@
            href="http://wii.com/">Wii</a>: 5937 3406 9123 0632
       </li>
       <li>
-        <a rel="me">XBox Live</a>: TheDoctorWhat
+        <a rel="me"
+           href="https://live.xbox.com/en-US/Profile?gamertag=TheDoctorWhat">XBox Live</a>: TheDoctorWhat
       </li>
       <li>
-        <a rel="me">PSN</a>: docwhat
+        <a rel="me"
+           href="http://us.playstation.com/publictrophy/index.htm?onlinename=docwhat">PSN</a>: docwhat
       </li>
     </ul>
   </li>
