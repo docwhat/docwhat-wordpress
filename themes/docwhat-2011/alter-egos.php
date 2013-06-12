@@ -108,8 +108,8 @@
            href="http://battle.net/">Battle.Net</a>: docwhat#1698
       </li>
       <li>
-        <a rel="me"
-           href="http://wii.com/">Wii</a>: 5937 3406 9123 0632
+        <a title="3DS Friend Code"
+           href="http://www.wikihow.com/Enter-Nintendo-3DS-Friend-Codes">3DS</a>: 3496-9806-5664
       </li>
       <li>
         <a rel="me"
