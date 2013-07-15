@@ -211,6 +211,12 @@ if( preg_match('!robots\.txt$!', $uri['path']) ) {
     exit();
 }
 
+// Old Topics Catcher
+if( preg_match('!^/topic/\S.*!', $uri['path']) ) {
+  header("Location: ".$base_uri);
+  exit();
+}
+
 // View Source Catcher
 if( preg_match('!view_source(|\.html|\.php|\.htm|_html)$!', $uri['path']) ) {
     header("Location: ".$base_uri.get_settings('category_base')."/code/");
