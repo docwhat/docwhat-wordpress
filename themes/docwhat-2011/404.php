@@ -111,6 +111,9 @@ if( $errno == 403 ) {
         $reason = 'spambot';
     }
 
+    if( preg_match('!^/topic/world$!', $uri['path']) ) {
+        $reason = 'spambot';
+    }
 }
 
 if( $_REQUEST['testreason'] == 'badlink' ) {
