@@ -23,6 +23,9 @@ function docwhat_theme_setup() {
         set_post_thumbnail_size(250, 250);
 }
 
+// Tell Photon to cache/resize my images even though they are on https
+add_filter( 'jetpack_photon_reject_https', '__return_false' );
+
 // Add post thumbnail to post excerpt
 $docwhat_count = 0;
 function docwhat_add_post_thumb($content) {
