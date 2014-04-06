@@ -155,12 +155,12 @@
           <input type="hidden" name="currency_code" value="USD"/>
           <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_SM.gif:NonHostedGuest"/>
           <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="margin:0"/>
-          <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+          <img alt="" border="0" src="//www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
         </form>
       </li>
       <li>
   <a href="http://flattr.com/thing/303004/The-Doctor-What" target="_blank">
-<img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+<img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
       </li>
       <li style="display: none">
         <a rel="me" href="http://christian.holtje.org/">Vanity URL</a>

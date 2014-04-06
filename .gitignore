@@ -1,2 +1,4 @@
 *~
 /themes/*/.sass-cache/
+/.bundle/
+/tags
