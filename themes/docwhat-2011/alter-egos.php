@@ -57,10 +57,6 @@
       </li>
       <li>
         <a rel="me"
-           href="http://www.bloglines.com/public/docwhat">Bloglines</a>
-      </li>
-      <li>
-        <a rel="me"
            href="http://del.icio.us/docwhat/">Del.icio.us</a>
       </li>
       <li>
@@ -89,11 +85,7 @@
       </li>
       <li>
         <a rel="me"
-           href="http://technorati.com/people/technorati/docwhat">Technorati</a>
-      </li>
-      <li>
-        <a rel="me"
-           href="http://youtube.com/TheDoctorWhat">YouTube</a>: TheDoctorWhat
+           href="https://www.youtube.com/user/TheDoctorWhat">YouTube</a>: TheDoctorWhat
       </li>
     </ul>
   </li>
