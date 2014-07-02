@@ -1,0 +1,100 @@
+
+#comments, #acp-comments {
+   margin: 1em;
+
+   article.comment {
+      margin: 1em 0;
+      max-width: span(12);
+   }
+
+  // top-level ol
+   .commentlist, .children {
+      list-style: none;
+      -webkit-padding-start: 0;
+      padding: 0;
+   }
+   .children {
+      margin: 0 0 0 1em;
+   }
+
+   $img-size: 35px;
+   header {
+      float: right;
+      margin: 0;
+      padding: 0;
+      .avatar {
+	 background-color: #eee;
+	 @include box-shadow(1px 1px 1px #888);
+	 margin: 3px 3px 0 0;
+      }
+   }
+
+  // buttons
+   .reply a, .form-submit input {
+      & {
+	 margin: 0.4em 0;
+	 display: block;
+	 border: 1px solid $hero-border-color;
+	 @include background-with-css2-fallback(linear-gradient(bottom, darken($hero-color, 30%), transparentize(white, 1)));
+	 text-align: center;
+	 @include border-radius( 4px );
+	 @include background-clip();
+      }
+      &:hover {
+	 @include background-with-css2-fallback(linear-gradient(bottom, $hero-color, transparentize(white, 1)));
+      }
+   }
+
+   #ajax-comment-preview {
+      display: none;
+   }
+
+   .form-submit {
+      @include clearfix;
+   }
+   .form-submit input {
+      float: right;
+      margin: 0.5em 0 0.5em 0.5em;
+   }
+
+   .form-allowed-tags {
+      font-style: italic;
+      code {
+	 font-style: normal;
+      }
+   }
+
+   section {
+      p:last-child {
+	 margin-bottom: 0;
+      }
+   }
+
+   .comment-author {
+      line-height: 1em;
+      font-size: 110%;
+      padding: 0.3em;
+      margin-bottom: 0.5em;
+      @include background-with-css2-fallback(linear-gradient(top, transparentize($hero-color, 1), $hero-color));
+      border: 1px solid $hero-border-color;
+   }
+
+   footer.comment-meta {
+      text-align: right;
+      font-size: 80%;
+      @include background-with-css2-fallback(linear-gradient(right, lighten(desaturate($hero-color, 50%), 10%), transparentize(#ddd, 1)));
+      padding-right: 0.5em;
+      clear: both;
+   }
+
+   .logged-in-as, .subscribe-to-comments {
+      margin: 1em 0;
+      font-style: italic;
+      text-align: right;
+   }
+
+}
+
+#respond textarea {
+   width: 100%;
+}

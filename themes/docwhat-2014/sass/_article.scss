@@ -1,0 +1,75 @@
+
+article {
+  p.incr, .incr p { @include incr; }
+// I'd like this to work, but it doesn't. :-(
+//  .dquo  {
+//    @include dquo(0.5em);
+//    padding-left: 0.5em;
+//  }
+  header, footer {
+    font-size: 0.75em;
+    color: #777;
+  }
+  .entry-title {
+    padding-left: 0.2em;
+    border: 1px solid $hero-border-color;
+    @include border-radius( 0.2em );
+    @include background-clip();
+    padding-bottom: 0.2em;
+    @include background-with-css2-fallback(linear-gradient(top, transparentize($hero-color, 1), $hero-color));
+    a {
+      @include link-colors($header-color, $link-hover-color, $link-active-color, $header-color);
+    }
+  }
+
+  .entry-meta {
+    margin: 1em 0;
+    clear: both;
+  }
+  .more-link {
+    display: block;
+    margin: 1em 0;
+    text-decoration: none;
+    text-align: right;
+    font-style: italic;
+  }
+
+  .entry-content {
+    p {
+      @include fancy-paragraphs;
+    }
+  }
+
+  blockquote {
+    @include alt;
+  }
+
+  /* Post Thumbnails */
+  .wp-post-image,
+  img.alignright,
+  img.alignleft {
+    vertical-align: top;
+    border: 1px solid #eee;
+    margin: 3px 0;
+    @include box-shadow(2px 2px 4px #aaa);
+  }
+  .wp-post-image-right,
+  img.alignright {
+    float: right;
+    margin-left: .7em;
+  }
+  .wp-post-image-left,
+  img.alignleft {
+    float: left;
+    margin-right: .7em;
+  }
+
+  .wp-post-image {
+    max-width: 40%;
+    height: auto;
+  }
+
+   .syntaxhighlighter {
+      clear: both;
+   }
+}

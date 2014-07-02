@@ -1,0 +1,68 @@
+// This import applies a global reset to any page that imports this stylesheet.
+//@import "blueprint/reset";
+
+
+// Here is where you can define your constants for your application
+// and to configure the blueprint framework.  // Feel free to delete
+// these if you want keep the defaults:
+
+//$blueprint-grid-columns: 8;
+//$blueprint-container-size: 480px;
+//$blueprint-grid-margin: 10px;
+//
+//// Use this to calculate the width based on the total width.
+//// Or you can set $blueprint-grid-width to a fixed value and unset
+//// $blueprint-container-size -- it will be calculated for you.
+//$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
+
+$blueprint-liquid-container-min-width: 480px;
+$blueprint-liquid-container-width: 98%;
+
+// Fonts
+$blueprint-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+$blueprint-fixed-font-family: Menlo, "Bitstream Vera Sans Mono", Monaco, "Lucida Console", monospace;
+
+$header-font: 'Cherry Cream Soda', sans-serif;
+@import url(//fonts.googleapis.com/css?family=Cherry+Cream+Soda);
+
+//$blueprint-font-size: 12px;
+$blueprint-font-size: 13px;
+
+// Link Colors
+$link-color:         #0066cc;
+$link-hover-color:   #0099ff;
+$link-focus-color:   $link-hover-color;
+$link-active-color:  lighten(adjust-hue($link-color, 75deg), 10%);
+$link-visited-color: darken($link-color, 10%);
+
+
+@import "html5reset";
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+@import "blueprint/fancy-type";
+//@import "blueprint/scaffolding";
+@import "blueprint/liquid";
+//@import "compass/reset";
+@import "compass/css3";
+
+@include blueprint-liquid-grid;
+
+// My Hero Colors
+$hero-color: #d8ff66;
+$hero-border-color: desaturate($hero-color, 30%);
+
+// // Combine the partials into a single screen stylesheet.
+// @import "partials/page";
+// @import "partials/form";
+// @import "partials/two_col";
+//
+// // Print stylesheet.
+@import "print";
+
+/* Text meant only for screen readers */
+.screen-reader-text,
+.section-heading {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}

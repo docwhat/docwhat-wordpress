@@ -1,0 +1,7 @@
+
+@media (max-width: 540px) {
+  #page {
+    @include border-radius( 0 );
+    margin: 0;
+  }
+}

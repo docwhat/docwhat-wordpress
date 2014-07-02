@@ -1,0 +1,86 @@
+/*!
+ *  Theme Name:     Doctor What 2014
+ *  Author:         Christian Höltje
+ *  Author URI:     http://docwhat.org/
+ *  Template:       twentyfourteen
+ *  Version:        1.0
+ */
+
+@import "base";
+@import "header";
+@import "widgets";
+@import "article";
+@import "comments";
+@import "layout";
+
+body {
+  @include blueprint-typography(true);
+}
+
+nav a, header a, footer a, .comment-author a {
+  text-decoration: none;
+}
+
+nav#nav-above {
+  display: none;
+}
+
+nav#nav-below {
+  h1 {
+     display: none;
+  }
+  @include clearfix;
+  clear: both;
+  margin-top: 1em;
+  div {
+    width: 50%;
+  }
+  .nav-previous {
+    float: left;
+  }
+  .nav-next {
+    float: right;
+    text-align: right;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include single-text-shadow(darken($hero-color, 50%), 0.1ex, 0.1ex, 0.2ex);
+}
+
+#page {
+  @include container;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  max-width: 60em;
+  border: 1px solid desaturate($hero-color, 100%);
+  @include border-radius( 1em );
+  @include background-clip();
+}
+
+footer#colophon {
+  margin-top: 1em;
+  padding-top: 0.8em;
+  text-align: center;
+  background: $hero-color;
+  @include background-with-css2-fallback(linear-gradient(top, transparentize($hero-color, 0.8), darken($hero-color, 10%)));
+  border-top: 1px solid $hero-border-color;
+  @include border-radius(0 0 1em 1em);
+  @include background-clip();
+  font-size: 0.8em;
+}
+
+
+.error404 {
+  #secondary {
+    display: none;
+  }
+}
+
+#wpstats {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@import "mobile";
