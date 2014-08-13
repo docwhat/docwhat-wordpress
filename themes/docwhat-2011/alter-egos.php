@@ -61,7 +61,7 @@
       </li>
       <li>
         <a rel="me"
-           href="https://plus.google.com/108719135035895800647/about">Google+</a>
+           href="https://plus.google.com/+ChristianHoltje/about">Google+</a>
       </li>
       <li>
         <a rel="me"
