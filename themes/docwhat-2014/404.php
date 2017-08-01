@@ -79,7 +79,7 @@ if( $errno == 403 ) {
     }
 
     # http or https is a bad spambot.
-    if( preg_match('!(/(http|https):/)!', $_SERVER['REQUEST_URI']) ) {
+    if( preg_match('!(/(|\s|%22)(http|https):/)!', $_SERVER['REQUEST_URI']) ) {
         $reason = 'spambot';
     }
 
@@ -112,6 +112,10 @@ if( $errno == 403 ) {
     }
 
     if( preg_match('!^/topic/world$!', $uri['path']) ) {
+        $reason = 'spambot';
+    }
+
+    if( 'Open Sans\"' == $_GET['family'] ) {
         $reason = 'spambot';
     }
 }
